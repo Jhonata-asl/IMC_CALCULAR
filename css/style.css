@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 40px;
+    background: #fc0404;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #f10e0e;
+    font-size: 16px;
+}
+
+button {
+    background-color: #000000;
+    color: rgb(255, 14, 14);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #080808;
+}
+
+.resultado {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(7, 7, 7, 0.89);
+    transition: all 0.3s ease-in-out;
+}
+
+.resultado.magro {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 6px solid #28a745;
+}
+
+.resultado.peso-normal {
+    background-color: #cce5ff;
+    color: #004085;
+    border-left: 6px solid #007bff;
+}
+
+.resultado.sobrepeso {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 6px solid #ffc107;
+}
+
+.resultado.obesidade {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 6px solid #dc3545;
+}
+
+.resultado .icon {
+    font-size: 70px;
+    margin-right: 15px;
+}
+
+.resultado p {
+    margin: 0;
+}
+
+.formula {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+}
